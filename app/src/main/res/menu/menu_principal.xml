@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home" />
+    <item android:title="@string/optometrista" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+        </menu>
+    </item>
+    <item android:title="@string/asesor" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+        </menu>
+    </item>
+    <item android:title="@string/paciente" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+        </menu>
+    </item>
+    <item android:title="@string/generar_cita" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+        </menu>
+    </item>
+    <item android:title="@string/receta" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+        </menu>
+
+    </item>
+    <item android:title="@string/cotizaciones" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/productos" >
+        <menu >
+            <item android:title="Agregar" />
+            <item android:title="Buscar" />
+            <item android:title="Eliminar" />
+            <item android:title="Actualizar" />
+            <item android:title="Carrucel" />
+        </menu>
+
+    </item>
+    <item android:title="@string/salir"/>
+</menu>
