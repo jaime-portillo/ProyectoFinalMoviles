@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     android:orientation="vertical"
-    tools:context=".AgregarOptometrista">
-
+    tools:context=".AgregarAsesor">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +19,14 @@
             android:hint="Nombre"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
-
+        <EditText
+            android:id="@+id/editTextTextPersonName10d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="JVPM"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
         <EditText
             android:id="@+id/editTextDate3"
             android:layout_width="match_parent"
@@ -37,15 +43,6 @@
             android:ems="10"
             android:hint="Edad"
             android:inputType="number"
-            android:minHeight="48dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName10d"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Direccion"
-            android:inputType="textPersonName"
             android:minHeight="48dp" />
 
         <EditText
@@ -89,4 +86,5 @@
 
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
