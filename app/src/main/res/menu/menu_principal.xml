@@ -1,65 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="@string/home" />
-    <item android:title="@string/optometrista" >
-        <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_optometrista"
+        android:title="@string/optometrista">
+        <menu>
+            <item
+                android:id="@+id/nav_optometrista_add"
+                android:title="@string/agregar" />
+            <item
+                android:id="@+id/nav_optometrista_search"
+                android:title="@string/buscar" />
+            <item
+                android:id="@+id/nav_optometrista_delete"
+                android:title="@string/eliminar" />
+            <item
+                android:id="@+id/nav_optometrista_update"
+                android:title="@string/actualizar" />
         </menu>
     </item>
     <item android:title="@string/asesor" >
         <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
+            <item
+                android:id="@+id/nav_asesor_add"
+                android:title="@string/agregar" />
+            <item android:title="@string/buscar" />
+            <item android:title="@string/eliminar" />
+            <item android:title="@string/actualizar" />
         </menu>
     </item>
     <item android:title="@string/paciente" >
         <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
+            <item
+                android:id="@+id/nav_paciente_add"
+                android:title="@string/agregar" />
+            <item android:title="@string/buscar" />
+            <item android:title="@string/eliminar" />
+            <item android:title="@string/actualizar" />
         </menu>
     </item>
     <item android:title="@string/generar_cita" >
         <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
+            <item
+                android:id="@+id/nav_cita_add"
+                android:title="@string/agregar" />
+            <item android:title="@string/buscar" />
+            <item android:title="@string/eliminar" />
+            <item android:title="@string/actualizar" />
         </menu>
     </item>
     <item android:title="@string/receta" >
         <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
+            <item
+
+                android:id="@+id/nav_receta_add"
+                android:title="@string/agregar" />
+            <item android:title="@string/buscar" />
+            <item android:title="@string/eliminar" />
+            <item android:title="@string/actualizar" />
         </menu>
 
     </item>
     <item android:title="@string/cotizaciones" >
         <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
+            <item
+                android:id="@+id/nav_cotizacion_add"
+                android:title="@string/agregar" />
+            <item android:title="@string/buscar" />
+            <item android:title="@string/eliminar" />
+            <item android:title="@string/actualizar" />
         </menu>
 
     </item>
 
     <item android:title="@string/productos" >
         <menu >
-            <item android:title="Agregar" />
-            <item android:title="Buscar" />
-            <item android:title="Eliminar" />
-            <item android:title="Actualizar" />
-            <item android:title="Carrucel" />
+            <item
+
+                android:id="@+id/nav_producto_add"
+                android:title="@string/agregar" />
+            <item android:title="@string/buscar" />
+            <item android:title="@string/eliminar" />
+            <item android:title="@string/actualizar" />
+            <item android:title="@string/carrucel" />
         </menu>
 
     </item>

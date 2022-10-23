@@ -5,12 +5,13 @@
       <map>
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_asesor.xml" value="0.2" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_cita.xml" value="0.2" />
+        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_cotizacion.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_optometrista.xml" value="0.33" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_paciente.xml" value="0.33" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_receta.xml" value="0.33" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_inicio.xml" value="0.2" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/menu/menu_principal.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/menu/menu_principal.xml" value="0.33" />
       </map>
     </option>
   </component>
