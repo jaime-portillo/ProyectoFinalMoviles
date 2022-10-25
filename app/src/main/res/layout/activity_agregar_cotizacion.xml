@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nombre"
             android:inputType="textPersonName"
-            android:text="Nombre"
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
@@ -30,9 +30,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Descripcion de Aro"
             android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Descripciòn de Aro" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/edPrecioAro"
@@ -153,6 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#9C27B0"
             android:text="Calcular" />
 
         <Space
@@ -165,6 +166,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
             android:text="Generar PDF" />
 
         <Space
@@ -177,6 +179,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#2196F3"
             android:text="Guardar" />
     </LinearLayout>
 </LinearLayout>

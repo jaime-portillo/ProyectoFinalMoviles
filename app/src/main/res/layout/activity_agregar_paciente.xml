@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextPersonName10"
+            android:id="@+id/AAnombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -21,7 +21,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextDate3"
+            android:id="@+id/AAfechaN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -30,7 +30,7 @@
             android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/AAedad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -39,7 +39,7 @@
             android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName11"
+            android:id="@+id/AAdui"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,7 +48,7 @@
             android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/AAtelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -66,10 +66,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/AAguardar"
                 android:layout_width="377dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#2196F3"
                 android:text="Guardar" />
 
             <Space
