@@ -10,179 +10,209 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/ARNombre"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Nombre"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:text="Fecha" />
 
         <EditText
-            android:id="@+id/ARaro"
+            android:id="@+id/editTextDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
-            android:hint="Descripcion de Aro"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:hint="00-00-0000"
+            android:inputType="date" />
 
-        <EditText
-            android:id="@+id/ARPrecioAro"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/black"
-            android:ems="10"
-            android:hint="##.###"
-            android:inputType="numberDecimal"
-            android:minHeight="48dp"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:text="Dr." />
 
         <Spinner
-            android:id="@+id/ARTipoLente"
+            android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paciente" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <CheckBox
-            android:id="@+id/checkAntireflejo"
+            android:id="@+id/checkBox"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="Diabetico" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Hipertenso" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Antirreflejo"
+            android:text="Irritacion Ocular" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cefalea" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agudesa Visual Sin Correccion" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Esf OD" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Cil OD" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Eje OD" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Esf OI"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/ARdescuento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Descuento"
-            android:textColor="@color/black" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RadioButton
-                android:id="@+id/AR5d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="5%" />
-
-            <RadioButton
-                android:id="@+id/AR15d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="15%" />
-
-            <RadioButton
-                android:id="@+id/AR20d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="20%" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/ARSubTotal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sub Total:"
-            android:textColor="#050505" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:outlineAmbientShadowColor="#AF4343" />
-
-        <TextView
-            android:id="@+id/ARDescuento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Descuento:"
-            android:textColor="#000000" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
-
-        <TextView
-            android:id="@+id/ARTotal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Total:"
-            android:textColor="#000000" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/ARCalcular"
+        <EditText
+            android:id="@+id/editTextTextPersonName8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#9C27B0"
-            android:text="Calcular" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Cil OI"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/ARGenerarPdf"
+        <EditText
+            android:id="@+id/editTextTextPersonName9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#4CAF50"
-            android:text="Generar PDF" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/ARguardar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#2196F3"
-            android:text="Guardar" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Eje OI"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agudesa Visual Con  Correccion" />
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comentario" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
 </LinearLayout>
