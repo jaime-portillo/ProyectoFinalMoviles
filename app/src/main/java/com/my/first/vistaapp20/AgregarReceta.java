@@ -50,6 +50,11 @@ public class AgregarReceta extends AppCompatActivity {
                 startActivity(intentCita);
                 finish();
                 return true;
+            case R.id.nav_receta_add:
+                Intent intentRec = new Intent(AgregarReceta.this, AgregarReceta.class);
+                startActivity(intentRec);
+                finish();
+                return true;
             case R.id.nav_cotizacion_add:
                 Intent intentCot = new Intent(AgregarReceta.this, AgregarCotizacion.class);
                 startActivity(intentCot);

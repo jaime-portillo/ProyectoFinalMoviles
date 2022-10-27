@@ -50,6 +50,11 @@ public class AgregarOptometrista extends AppCompatActivity {
                 startActivity(intentCita);
                 finish();
                 return true;
+            case R.id.nav_receta_add:
+                Intent intentRec = new Intent(AgregarOptometrista.this, AgregarReceta.class);
+                startActivity(intentRec);
+                finish();
+                return true;
             case R.id.nav_cotizacion_add:
                 Intent intentCot = new Intent(AgregarOptometrista.this, AgregarCotizacion.class);
                 startActivity(intentCot);
