@@ -20,14 +20,7 @@
             android:hint="Nombre"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
-        <EditText
-            android:id="@+id/AAdireccion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="JVPM"
-            android:inputType="textPersonName"
-            android:minHeight="48dp" />
+
         <EditText
             android:id="@+id/AAfecha"
             android:layout_width="match_parent"

@@ -38,6 +38,14 @@
             android:hint="Edad"
             android:inputType="number"
             android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/AAdireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="JVPM"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/AOdireccion"
@@ -68,7 +76,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="370dp" />
+            android:layout_height="330dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
