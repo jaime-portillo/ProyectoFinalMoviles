@@ -103,7 +103,7 @@
             android:text="Agudesa Visual Sin Correccion" />
 
         <Spinner
-            android:id="@+id/spinner4"
+            android:id="@+id/spAVSC"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -190,7 +190,7 @@
             android:text="Agudesa Visual Con  Correccion" />
 
         <Spinner
-            android:id="@+id/spinner5"
+            android:id="@+id/spAVCC"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />

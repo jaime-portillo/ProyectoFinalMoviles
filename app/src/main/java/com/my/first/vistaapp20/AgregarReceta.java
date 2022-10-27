@@ -7,14 +7,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AgregarReceta extends AppCompatActivity {
-
+    private Spinner spAVSC,spAVCC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_receta);
+        spAVSC=(Spinner) findViewById(R.id.spAVSC);
+        spAVCC=(Spinner) findViewById(R.id.spAVCC);
+        String[]opciones={"Elegir","20/20","20/30","20/50","20/70","20/100","20/200"};
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(
+                this,android.R.layout.simple_spinner_item,
+                opciones
+        );
+        spAVSC.setAdapter(adapter);
+        spAVCC.setAdapter(adapter);
     }
 
     @Override
