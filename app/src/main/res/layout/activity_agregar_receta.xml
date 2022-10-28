@@ -14,13 +14,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/AARfecha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fecha" />
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/AARFechaR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -28,25 +28,25 @@
             android:inputType="date" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/AARdr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dr." />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/AARspinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/AARpaciente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Paciente" />
 
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/AARspinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp" />
@@ -58,13 +58,13 @@
         android:layout_height="wrap_content">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/AARdiabetico"
             android:layout_width="170dp"
             android:layout_height="match_parent"
             android:text="Diabetico" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/AARhipertenso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hipertenso" />
@@ -77,14 +77,14 @@
         android:orientation="horizontal">
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/AARirritaocular"
             android:layout_width="26dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Irritacion Ocular" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/AARcefalea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -214,5 +214,9 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:backgroundTint="#03A9F4"
+        android:backgroundTintMode="src_in"
+        android:fadeScrollbars="false"
         android:text="Guardar" />
 </LinearLayout>
