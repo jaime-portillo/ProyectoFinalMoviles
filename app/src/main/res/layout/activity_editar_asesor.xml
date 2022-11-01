@@ -14,6 +14,15 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/AEAid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
             android:id="@+id/AEAnombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,39 +79,12 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/AEAguardar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#03A9F4"
-            android:text="guardar" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
             android:id="@+id/AEAeditar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#4CAF50"
+            android:backgroundTint="#673AB7"
             android:text="Editar" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/AEAeliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#A8033B"
-            android:text="Eliminar" />
-
 
     </LinearLayout>
 
