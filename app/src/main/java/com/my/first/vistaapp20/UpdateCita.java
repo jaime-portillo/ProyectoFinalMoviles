@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Activity_editar_asesor extends AppCompatActivity {
+public class UpdateCita extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editar_asesor);
+        setContentView(R.layout.activity_editar_cita);
     }
 }
