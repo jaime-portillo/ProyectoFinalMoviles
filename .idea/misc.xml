@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_asesor.xml" value="0.2" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_cita.xml" value="0.2" />
-        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_cotizacion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_cotizacion.xml" value="0.5" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_optometrista.xml" value="0.33" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_paciente.xml" value="0.33" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_agregar_producto.xml" value="0.20416666666666666" />
@@ -19,6 +19,8 @@
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_read_asesor.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_read_optometrista.xml" value="0.33" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_read_paciente.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_read_producto.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/layout/activity_read_receta.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mejai/AndroidStudioProjects/VistaApp202/app/src/main/res/menu/menu_principal.xml" value="0.33" />
       </map>
     </option>
