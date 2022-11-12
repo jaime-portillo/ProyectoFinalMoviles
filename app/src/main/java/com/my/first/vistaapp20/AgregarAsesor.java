@@ -1,5 +1,7 @@
 package com.my.first.vistaapp20;
 
+import static java.security.AccessController.getContext;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,9 +9,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
+import com.my.first.vistaapp20.models.AsesorModel;
+import com.my.first.vistaapp20.services.AsesoresService;
+
 public class AgregarAsesor extends AppCompatActivity {
+
+    private AsesoresService asesoresService;
+
+    public AgregarAsesor() {
+        this.asesoresService = new AsesoresService();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,4 +84,22 @@ public class AgregarAsesor extends AppCompatActivity {
         }
     }
 
+    public void btnGuardar_onClick(View view) {
+        AsesorModel asesorModel = new AsesorModel();
+        EditText nombre = view.findViewById(R.id.AAnombre);
+        EditText fechaNacimiento = view.findViewById(R.id.AAfecha);
+        EditText edad = view.findViewById(R.id.AAedad);
+        EditText telefono = view.findViewById(R.id.AAtelefono);
+        EditText dui = view.findViewById(R.id.AAdui);
+
+        asesorModel.setNombre(nombre.getText().toString());
+        asesorModel.setFechaNacimiento(fechaNacimiento.getText().toString());
+        asesorModel.setEdad(Integer.parseInt(edad.getText().toString()));
+        asesorModel.setTelefono(telefono.getText().toString());
+        asesorModel.setDui(dui.getText().toString());
+
+        if (this.asesoresService.createAsesor(asesorModel) <= 0) {
+            Toast.makeText(this, "Error al crear el asesor", Toast.LENGTH_SHORT).show();
+        }
+    }
 }
