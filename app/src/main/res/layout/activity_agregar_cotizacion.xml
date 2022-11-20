@@ -25,14 +25,22 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/edAro"
+            android:id="@+id/edDesAro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Descripcion de Aro"
+            android:hint="Descripcion Aro"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/precio_aro" />
 
         <EditText
             android:id="@+id/edPrecioAro"
@@ -45,11 +53,39 @@
             android:inputType="numberDecimal"
             android:minHeight="48dp" />
 
-        <Spinner
-            android:id="@+id/spTipoLente"
+        <EditText
+            android:id="@+id/edDesLente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Descripcion Lente"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Precio Lente" />
+
+        <EditText
+            android:id="@+id/edPreLente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="##.###"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edDescuento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Descuento en %"
+            android:inputType="number" />
 
         <CheckBox
             android:id="@+id/checkAntireflejo"
@@ -62,48 +98,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView12"
+        <Button
+            android:id="@+id/btnCalcularDes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Descuento"
-            android:textColor="@color/black" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RadioButton
-                android:id="@+id/rb5por"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="5%" />
-
-            <RadioButton
-                android:id="@+id/rb15por"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="15%" />
-
-            <RadioButton
-                android:id="@+id/rb20por"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="20%" />
-        </RadioGroup>
+            android:layout_weight="1"
+            android:text="Calcular"
+            android:onClick="CalcularDescuento"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="125dp"
         android:layout_weight="1"
 
         android:orientation="vertical">
@@ -115,21 +122,12 @@
             android:text="Sub Total:"
             android:textColor="#050505" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:outlineAmbientShadowColor="#AF4343" />
-
         <TextView
             android:id="@+id/tvDescuento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Descuento:"
             android:textColor="#000000" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
 
         <TextView
             android:id="@+id/tvTotal"
@@ -138,41 +136,6 @@
             android:text="Total:"
             android:textColor="#000000" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/btnCalcular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#9C27B0"
-            android:text="Calcular" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/btnGenerarPdf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#4CAF50"
-            android:text="Generar PDF" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
 </LinearLayout>

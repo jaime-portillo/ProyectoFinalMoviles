@@ -1,21 +1,53 @@
 package com.my.first.vistaapp20;
 
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AgregarCotizacion extends AppCompatActivity {
-private EditText nombre, desAro, PrecioAro;
+private EditText nombre, desAro, precioAro,desLente,precioLente,descuento;
+    private TextView subtotal, tdescuento, total ;
+    private Button vCalcular;
+    private CheckBox chek1;
+
+    @Override
+    public void onOptionsMenuClosed(Menu menu) {
+        super.onOptionsMenuClosed(menu);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_cotizacion);
+        nombre=(EditText) findViewById(R.id.edNombre);
+        desAro=(EditText) findViewById(R.id.edDesAro);
+        precioAro=(EditText) findViewById(R.id.edPrecioAro);
+        desLente=(EditText) findViewById(R.id.edDesLente);
+        precioLente=(EditText) findViewById(R.id.edPreLente);
+        descuento=(EditText) findViewById(R.id.edDescuento);
+        subtotal=(TextView) findViewById(R.id.tvSubTotal);
+        tdescuento=(TextView) findViewById(R.id.tvDescuento);
+        total=(TextView) findViewById(R.id.tvTotal);
+        chek1=(CheckBox) findViewById(R.id.checkAntireflejo);
+        vCalcular=(Button) findViewById(R.id.btnCalcular);
+
     }
 
     @Override
@@ -70,5 +102,35 @@ private EditText nombre, desAro, PrecioAro;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void CalcularDescuento(View view) {
+        if(precioAro.getText().toString().isEmpty()){
+            precioAro.setText("debe ingresar precio del aro");
+        }else if( precioLente.getText().toString().isEmpty()){
+            precioLente.setText("debe ingresar precio del lente");
+        } else if(descuento.getText().toString().isEmpty()){
+            descuento.setText("debe ingresar descuento en porcentaje 5,10,15");
+        }else {
+            operar();
+        }
+    }
+
+    private void operar() {
+        double preAro=Double.parseDouble(precioAro.getText().toString());
+        double preLente=Double.parseDouble(precioLente.getText().toString());
+        double des=Double.parseDouble(descuento.getText().toString());
+
+        if(chek1.isChecked()==true){
+            subtotal.setText("Subtotal: " +String.format("%.2f", preAro+preLente+75));
+            tdescuento.setText("Descuento: " +String.format("%.2f",preLente*(des/100)));
+            total.setText("Total: " +String.format("%.2f",(preAro+preLente+75)-(preLente*(des/100))));
+
+        }else{
+            subtotal.setText("subtotal: " + String.format("%.2f", preAro+preLente));
+            tdescuento.setText("Descuento: " + String.format("%.2f",preLente*(des/100)));
+            total.setText("Total: " +String.format("%.2f",(preAro+preLente)-(preLente*(des/100))));
+        }
+
     }
 }
