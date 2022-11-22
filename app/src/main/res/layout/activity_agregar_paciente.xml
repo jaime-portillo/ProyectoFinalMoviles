@@ -7,10 +7,19 @@
     android:orientation="vertical"
     tools:context=".AgregarPaciente">
 
+    <EditText
+        android:id="@+id/AAPid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="phone"
+        android:minHeight="48dp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
 
         <EditText
             android:id="@+id/APnombre"
@@ -59,18 +68,22 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="370dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <Button
-                android:id="@+id/APguardar"
-                android:layout_width="377dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/AAOguardar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#2196F3"
+                android:onClick="btnGuardar_onClick"
                 android:text="Guardar" />
 
             <Space
@@ -78,6 +91,31 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
+            <Button
+                android:id="@+id/AAUeditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                android:onClick="btneditar_onClick"
+                android:text="Editar" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/AAEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F44336"
+                android:onClick="btneliminar_onClick"
+                android:text="Eliminar" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

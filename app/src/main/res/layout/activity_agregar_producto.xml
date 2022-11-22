@@ -7,10 +7,20 @@
     android:padding="10dp"
     tools:context=".AgregarProducto">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <EditText
+            android:id="@+id/AAPRid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="number"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/AAPdescripcion"
@@ -45,12 +55,56 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="429dp" />
-
-        <Button
-            android:id="@+id/AAPGuardar"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#2196F3"
-            android:text="Guardar" />
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/AAPRguardar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                android:onClick="btnGuardar_onClick"
+                android:text="Guardar" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/AAPReditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                android:onClick="btneditar_onClick"
+                android:text="Editar" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/AAPREliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F44336"
+                android:onClick="btneliminar_onClick"
+                android:text="Eliminar" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
     </LinearLayout>
 </LinearLayout>
