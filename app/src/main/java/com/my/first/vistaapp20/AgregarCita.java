@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class AgregarCita extends AppCompatActivity {
@@ -69,5 +70,14 @@ public class AgregarCita extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void btnGuardar_onClick(View view) {
+    }
+
+    public void btneditar_onClick(View view) {
+    }
+
+    public void btneliminar_onClick(View view) {
     }
 }

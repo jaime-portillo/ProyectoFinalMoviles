@@ -102,4 +102,13 @@ public class AgregarAsesor extends AppCompatActivity {
             Toast.makeText(this, "Error al crear el asesor", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void btnEliminar_onClick(View view) {
+    }
+
+    public void btnEditar_onClick(View view) {
+    }
+
+    public void btnGuardarR_onClick(View view) {
+    }
 }
