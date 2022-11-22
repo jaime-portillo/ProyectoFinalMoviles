@@ -6,6 +6,8 @@ public class AsesorModel {
     private int Edad;
     private String Dui;
     private String Telefono;
+    private int foto;
+
 
     public String getNombre() {
         return Nombre;
@@ -45,5 +47,13 @@ public class AsesorModel {
 
     public void setFechaNacimiento(String fechaNacimiento) {
         FechaNacimiento = fechaNacimiento;
+    }
+
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
     }
 }
