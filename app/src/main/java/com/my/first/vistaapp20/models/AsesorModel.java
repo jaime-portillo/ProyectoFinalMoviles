@@ -1,6 +1,7 @@
 package com.my.first.vistaapp20.models;
 
 public class AsesorModel {
+    private int AsesorId;
     private String Nombre;
     private String FechaNacimiento;
     private int Edad;
@@ -55,5 +56,13 @@ public class AsesorModel {
 
     public void setFoto(int foto) {
         this.foto = foto;
+    }
+
+    public int getAsesorId() {
+        return AsesorId;
+    }
+
+    public void setAsesorId(int asesorId) {
+        AsesorId = asesorId;
     }
 }

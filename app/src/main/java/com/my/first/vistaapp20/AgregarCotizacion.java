@@ -46,7 +46,6 @@ private EditText nombre, desAro, precioAro,desLente,precioLente,descuento;
         tdescuento=(TextView) findViewById(R.id.tvDescuento);
         total=(TextView) findViewById(R.id.tvTotal);
         chek1=(CheckBox) findViewById(R.id.checkAntireflejo);
-        vCalcular=(Button) findViewById(R.id.btnCalcular);
 
     }
 

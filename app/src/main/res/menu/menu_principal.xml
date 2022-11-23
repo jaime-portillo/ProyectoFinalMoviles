@@ -27,9 +27,9 @@
             <item
                 android:id="@+id/nav_asesor_add"
                 android:title="@string/agregar" />
-            <item android:title="@string/buscar" />
-            <item android:title="@string/eliminar" />
-            <item android:title="@string/actualizar" />
+            <item
+                android:id="@+id/nav_asesores"
+                android:title="Ver todos" />
         </menu>
     </item>
     <item android:title="@string/paciente" >
