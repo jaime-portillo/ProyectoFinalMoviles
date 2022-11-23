@@ -42,18 +42,17 @@ public class Inicio extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.nav_home:
-                Toast.makeText(this, "Bienvendido a Vista Movil App", Toast.LENGTH_SHORT).show();
-                return true;
             case R.id.nav_optometrista_add:
                 Intent intentOpt = new Intent(Inicio.this, AgregarOptometrista.class);
-                startActivity(intentOpt);
-                finish();
+                launcher.launch(intentOpt);
+                return true;
+            case R.id.nav_optometristas:
+                Intent intentOptometristas = new Intent(Inicio.this, ReadOptometrista.class);
+                launcher.launch(intentOptometristas);
                 return true;
             case R.id.nav_asesor_add:
                 Intent intentAsesor = new Intent(Inicio.this, AgregarAsesor.class);
-                startActivity(intentAsesor);
-                finish();
+                launcher.launch(intentAsesor);
                 return true;
             case R.id.nav_asesores:
                 Intent intentAsesores = new Intent(Inicio.this, ReadAsesor.class);

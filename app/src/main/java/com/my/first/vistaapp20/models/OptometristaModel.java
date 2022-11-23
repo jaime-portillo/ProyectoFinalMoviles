@@ -9,6 +9,7 @@ public class OptometristaModel {
     private String Direccion;
     private String Dui;
     private String Telefono;
+    private int Foto;
 
     public int getOptometristaId() {
         return OptometristaId;
@@ -72,5 +73,13 @@ public class OptometristaModel {
 
     public void setTelefono(String telefono) {
         Telefono = telefono;
+    }
+
+    public int getFoto() {
+        return Foto;
+    }
+
+    public void setFoto(int foto) {
+        Foto = foto;
     }
 }

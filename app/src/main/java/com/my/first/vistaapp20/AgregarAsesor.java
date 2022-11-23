@@ -105,6 +105,7 @@ public class AgregarAsesor extends AppCompatActivity {
                     String url = "http://192.168.1.100:5094/asesores";
                     JSONObject object = new JSONObject();
                     try {
+                        object.put("asesorId", Integer.parseInt(edtAsesorId.getText().toString()));
                         object.put("nombre", edtNombre.getText().toString());
                         object.put("fechaNacimiento", edtFechaNacimiento.getText().toString());
                         object.put("edad", Integer.parseInt(edtEdad.getText().toString()));
@@ -130,6 +131,8 @@ public class AgregarAsesor extends AppCompatActivity {
                     });
 
                     requestQueue.add(request);
+                    setResult(RESULT_OK);
+                    AgregarAsesor.super.onBackPressed();
                 }
             });
 
@@ -151,6 +154,8 @@ public class AgregarAsesor extends AppCompatActivity {
                     });
 
                     requestQueue.add(request);
+                    setResult(RESULT_OK);
+                    AgregarAsesor.super.onBackPressed();
                 }
             });
         }
